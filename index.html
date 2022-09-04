@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/fontawesome.min.cssZ">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+<body>
+  <!-- ============================== 
+               START HEADER
+  ====================================== -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="nav-toggler">
+        <i class="fa-solid fa-bars"></i>
+        </div>
+      <a class="logo">
+        <img src="img/logo.svg" alt="">
+      </a>
+      <ul class="nav-items">
+        <li class="nav-item nav-toggler-sidebar"><i class="fa-solid fa-bars"></i>        </li>
+        <li class="nav-item"><a href="#" class="nav-link">Collections</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Men</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Women</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="user-icons">
+      <div class="cart-details">
+          <div class="cart-icon">
+            <i class='bx bx-cart-alt'></i>
+          </div>
+          <div class="cart-bx">
+            <div class="cart-title">
+              <h3>Cart</h3>
+            </div>
+            <div class="cart-content">
+              <div class="cart-empty">
+                <p>Your cart is empty.</p>
+              </div>
+              <div class="cart-not-empty">
+                <div class="product-list">
+                </div>
+                  <button class="checkout-btn">Checkout</button>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="user-details">
+        <div class="user-avatar">
+          <img src="img/image-avatar.png" alt="">
+        </div>
+      </div>
+    </div>
+
+  </header>
+    <!-- ============================== 
+               START MAIN SECTION
+  ====================================== -->
+  <main class="main" id="main">
+    <div class="container">
+        <div class="left-side">
+          <div class="next-prev-btn">
+            <div class="prev-btn">
+              <button><i class='bx bx-chevron-left'></i></button>
+            </div>
+            <div class="next-btn">
+                <button><i class='bx bx-chevron-right'></i></button>
+            </div>
+          </div>
+            <div class="main-image">
+              <img src="img/image-product-1.jpg" alt="">
+            </div>
+            <div class="others-images">
+              <div class="imgBx" data-no="1">
+                <img src="img/image-product-1-thumbnail.jpg" alt="" srcset="">
+              </div>
+              <div class="imgBx" data-no="2">
+                <img src="img/image-product-2-thumbnail.jpg" alt="" srcset="">
+              </div>
+              <div class="imgBx" data-no="3">
+                <img src="img/image-product-3-thumbnail.jpg" alt="" srcset="">
+              </div>
+              <div class="imgBx" data-no="4">
+                <img src="img/image-product-4-thumbnail.jpg" alt="" srcset="">
+              </div>
+            </div>
+        </div>
+        <div class="right-side">  
+          <div class="product-info">
+                  <span class="highlight"> Sneaker Company</span>
+                  <h1 class="product-title">Fall Limited Edition Sneakers</h1>
+                  <p class="product-description">  These low-profile sneakers are your perfect casual wear companion. Featuring a 
+                    durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+          </div>
+          <div class="priceBx">
+                <h3 class="main-price"> $<span class="pricetext">125.00</span></h3>
+                <span class="price-off"> 50% </span>
+            <h5 class="old-price"> $250.00</h5>
+          </div>  
+          <div class="product-btns">
+            <div class="increment-product">
+              <button class="decrease-btn btn">-</button>
+              <h3 class="product-counter">1</h3>
+              <button class="increase-btn btn">+</button>
+            </div>
+            <button class="add-to-cart"><i class='bx bx-cart-alt'></i> Add to cart</button>
+          </div>
+        </div>
+    </div>
+    <div class="carousel-img">
+      <div class="close-btn"><i class='bx bx-x'></i></div>
+        <div class="next-prev-btn">
+          <div class="next-btn">
+            <button><i class='bx bx-chevron-left'></i></button>
+          </div>
+          <div class=" prev-btn">
+              <button><i class='bx bx-chevron-right'></i></button>
+          </div>
+        </div>
+          <div class="main-image">
+            <img src="img/image-product-1.jpg" alt="">
+          </div>
+          <div class="others-images">
+            <div class="imgBx">
+              <img src="img/image-product-1-thumbnail.jpg" alt="" srcset="">
+            </div>
+            <div class="imgBx">
+              <img src="img/image-product-2-thumbnail.jpg" alt="" srcset="">
+            </div>
+            <div class="imgBx">
+              <img src="img/image-product-3-thumbnail.jpg" alt="" srcset="">
+            </div>
+            <div class="imgBx">
+              <img src="img/image-product-4-thumbnail.jpg" alt="" srcset="">
+            </div>
+      </div>
+    </div>
+  </main>
+  <script src="js/all.min.js"></script>
+  <script src="js/fontawesome.min.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
